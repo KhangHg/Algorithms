@@ -27,13 +27,16 @@ void tinhtoan()
     }
     for (int i = 2; i <= n; i++)
     {
-        if (a[i] % 2 == 0)
+        if (a[i] % 2 == 0) // a[i] chẵn
         {
             if (BC[i - 1] == true && SC[i - 1] > 0)
             {
                 SC[i] = SC[i - 1] + a[i];
             }
-            SC[i] = a[i];
+            else
+            {
+                SC[i] = a[i];
+            }
             BC[i] = true;
 
             if (BL[i - 1] == true)
@@ -46,7 +49,7 @@ void tinhtoan()
                 BL[i] = false;
             }
         }
-        else
+        else // a[i] lẻ
         {
             if (BL[i - 1])
             {
