@@ -39,7 +39,7 @@ void get(int k)
 
 int main()
 {
-    cout << "N = ";
+    // cout << "N = ";
     cin >> n;
     for (int i = 1; i <= n; i++)
     {
