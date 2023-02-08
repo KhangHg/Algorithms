@@ -51,7 +51,7 @@ void tinhtoan()
         }
         else // a[i] lẻ
         {
-            if (BL[i - 1])
+            if (BL[i - 1] == true)
             {
                 SC[i] = SL[i - 1] + a[i];
                 BC[i] = true;
@@ -78,12 +78,17 @@ void tinhtoan()
 void findMax()
 {
     long long ans = 0 - 1e9;
+    // int ans = 0;
     bool found = false;
     for (int i = 1; i <= n; i++)
     {
-        if (BC[i] == true && SC[i] > ans)
+        if (BC[i] == true)
         {
-            ans = SC[i];
+            long long tmp = SC[i];
+            ans = max(ans, tmp);
+        }
+        if (ans > 0)
+        {
             found = true;
         }
         /* code */

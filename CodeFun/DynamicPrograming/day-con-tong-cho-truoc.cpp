@@ -23,6 +23,8 @@ void B(int s, int n)
         c[0][j] = 0;
     }
 
+    // i la so phan tu
+    // j la tong
     for (int i = 1; i <= n; i++)
     {
         for (int j = 0; j <= s; j++)
