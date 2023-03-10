@@ -10,13 +10,6 @@ queue<int> Q1;
 priority_queue<int> Q;
 void in()
 {
-    // for (int i = 0; i < Q1.size(); i++)
-    // {
-    //     int top = Q1.top();
-    //     Q1.pop();
-    //     cout << top << "\n";
-    // }
-
     while (!Q1.empty())
     {
         int top = Q1.front();
@@ -53,9 +46,7 @@ void slove()
         {
             int top = Q.top();
             Q.pop();
-            // top = Q.top();
             Q1.push(top);
-            // in();
         }
     }
 }
