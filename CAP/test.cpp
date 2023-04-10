@@ -6,16 +6,19 @@ int a[9999], b[9999];
 
 void input()
 {
+    ifstream cin("input.txt");
     cin >> t;
     cin >> n;
     for (int i = 0; i < n; i++)
     {
-        scanf("%d", &a[i]);
+        cin >> a[i];
+        // scanf("%d", &a[i]);
     }
     cin >> m;
     for (int i = 0; i < m; i++)
     {
-        scanf("%d", &b[i]);
+        // scanf("%d", &b[i]);
+        cin >> b[i];
     }
 }
 

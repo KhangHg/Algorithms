@@ -1,14 +1,11 @@
 #include <bits/stdc++.h>
-// #include <iostream>
-// #include <conio.h>
-// #include <cstdio>
-// #include <cstdlib>
 using namespace std;
 
 int t, n;
 int a[99999];
 void input()
 {
+    ifstream cin("text.txt");
     cin >> t;
     cin >> n;
     for (int i = 0; i < n; i++)
@@ -45,8 +42,13 @@ void slove(int k)
 
 int main()
 {
-    freopen("D:\\HUST\\Nam3\\Algorithms\\Code\\LISS_testcase\\VD3\\LISS1.inp", "r", cin);
-    input();
-    slove(0);
-    cout << num;
+    t = 1;
+    while (t > 0)
+    {
+        input();
+        slove(0);
+        cout << num;
+        t--;
+    }
+    return 0;
 }
